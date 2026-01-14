@@ -23,10 +23,17 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color);  <-- ESTA LÍNEA LA QUITAMOS O COMENTAMOS */
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+
+    /* 👇 AGREGAMOS ESTAS PROPIEDADES NUEVAS 👇 */
+    background-image: var(--main-bg-image);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 a {
@@ -288,3 +295,4 @@ footer {
     .section-padding { padding: 60px 5%; }
 
 }
+
