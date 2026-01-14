@@ -7,6 +7,7 @@
     --glass-bg: rgba(255, 255, 255, 0.05); /* Fondo para el efecto cristal */
     --glass-border: rgba(255, 255, 255, 0.1); /* Borde del cristal */
     --section-spacing: 100px;
+    --main-bg-image: url('https://corrientes.tur.ar/wp-content/uploads/2024/12/paseo1.jpg');
 }
 
 /* --- Reseteo básico y tipografía --- */
@@ -285,4 +286,5 @@ footer {
     .news-featured { grid-column: span 1; flex-direction: column; }
     .news-featured .news-image { height: 200px; }
     .section-padding { padding: 60px 5%; }
+
 }
