@@ -5,19 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuToggle) {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            menuToggle.querySelector('i').classList.toggle('fa-bars');
-            menuToggle.querySelector('i').classList.toggle('fa-times');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
         });
     }
 
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 80) {
+            navbar.style.padding = '12px 10%';
             navbar.style.background = 'rgba(10, 10, 18, 0.98)';
-            navbar.style.padding = '15px 10%';
         } else {
-            navbar.style.background = 'rgba(10, 10, 18, 0.85)';
             navbar.style.padding = '20px 10%';
+            navbar.style.background = 'rgba(10, 10, 18, 0.9)';
         }
     });
 });
